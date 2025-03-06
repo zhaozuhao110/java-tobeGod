@@ -1,0 +1,13 @@
+god-base/src/main/
+├── java/
+│   └── god/github/haoer/godbase/spi/
+│       ├── MyService.java          # SPI 服务接口
+│       ├── MyServiceImplA.java     # 实现类 A
+│       ├── MyServiceImplB.java     # 实现类 B
+│       └── SPIDemo.java            # SPI 测试类
+└── resources/
+    └── META-INF/
+        └── services/
+            └── god.github.haoer.godbase.spi.MyService  # SPI 配置文件
+                ├── god.github.haoer.godbase.spi.MyServiceImplA
+                └── god.github.haoer.godbase.spi.MyServiceImplB
