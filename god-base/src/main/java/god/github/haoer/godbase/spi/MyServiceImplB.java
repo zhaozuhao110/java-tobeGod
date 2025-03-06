@@ -7,10 +7,10 @@ package god.github.haoer.godbase.spi;
  * @description: TODO
  * @date 2025/3/619:41
  */
-public class MyServiceImplA implements MyService {
+public class MyServiceImplB implements MyService {
 
     @Override
     public void execute() {
-
+        System.out.println("我是 service B");
     }
 }

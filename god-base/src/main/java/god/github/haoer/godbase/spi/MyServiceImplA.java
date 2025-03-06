@@ -1,10 +1,16 @@
 package god.github.haoer.godbase.spi;
 
-   /**  
-    * @title: MyServiceImplA
-    * @projectName java-tobeGod
-    * @description: TODO
-    * @author zhaozuhao
-    * @date 2025/3/619:41
-    */public class MyServiceImplA {
+/**
+ * @author zhaozuhao
+ * @title: MyServiceImplA
+ * @projectName java-tobeGod
+ * @description: TODO
+ * @date 2025/3/619:41
+ */
+public class MyServiceImplA implements MyService {
+
+    @Override
+    public void execute() {
+        System.out.println("我是 service A");
+    }
 }
