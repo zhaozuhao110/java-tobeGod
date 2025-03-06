@@ -1,4 +1,4 @@
-package god.github.haoer.godbase;
+package god.github.haoer.godbase.generic;
 
 import lombok.Data;
 
