@@ -180,6 +180,10 @@ public class CreateObject {
         Unsafe unsafe = (Unsafe) field.get(null);  // 获取 Unsafe 实例
 
         // 2️⃣ 获取 User 类中字段的内存偏移量（Unsafe 允许直接操作内存）
+        // 获取字段的偏移量与对象实例化是两个独立的操作。
+        // 字段的偏移量是在类加载时就已经确定的，它描述了字段在内存中的位置。
+        // 因此，获取字段的偏移量与是否创建对象无关。
+        // 当使用 Unsafe 创建对象后，可以利用这些已获取的偏移量直接操作对象的字段。
         long nameOffset = unsafe.objectFieldOffset(User.class.getDeclaredField("name"));
         long ageOffset = unsafe.objectFieldOffset(User.class.getDeclaredField("age"));
 
